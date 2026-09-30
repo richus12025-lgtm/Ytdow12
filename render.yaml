@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ytdow12-api
+    runtime: docker
+    plan: free
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: ALLOWED_ORIGINS
+        value: "*"
